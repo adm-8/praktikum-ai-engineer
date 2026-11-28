@@ -1,0 +1,130 @@
+# ===== Секреты и переменные окружения =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+secrets/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+pip-wheel-metadata/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== Виртуальные окружения =====
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+# ===== Тесты, линтеры, типизация =====
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.jupyter/
+profile_default/
+ipython_config.py
+
+# ===== ML / AI артефакты =====
+# Веса моделей и кеши HuggingFace / sentence-transformers / torch
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+*.h5
+*.joblib
+*.pkl
+*.pickle
+.cache/
+hf_cache/
+huggingface/
+# Векторные индексы (FAISS, Chroma и т.п.)
+*.faiss
+*.index
+faiss_index/
+chroma/
+chroma_db/
+*.npy
+*.npz
+# Трекинг экспериментов
+wandb/
+mlruns/
+lightning_logs/
+runs/
+outputs/
+
+# ===== Данные (крупные/локальные) =====
+data/raw/
+data/tmp/
+*.parquet
+*.feather
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== Логи и временные файлы =====
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# ===== IDE / редакторы =====
+.idea/
+.vscode/
+*.code-workspace
+.fleet/
+.cursor/
+
+# ===== macOS / Windows / Linux =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.directory
+
+# ===== Claude Code — локальные настройки (могут содержать секреты) =====
+.claude/settings.local.json
